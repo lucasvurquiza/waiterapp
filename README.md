@@ -12,7 +12,7 @@
 
 ### Execute em um terminal o comando:
 
-### `docker run --name mongo -p 27017:27017 -d mongo`
+#### `docker run --name mongo -p 27017:27017 -d mongo`
 
 ### Logo após:
 

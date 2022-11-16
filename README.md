@@ -17,3 +17,9 @@
 ### Logo após:
 
 #### `yarn dev`
+
+## Tutorial de Execução do Front-end
+
+### Execute em um terminal o comando:
+
+#### `yarn dev`

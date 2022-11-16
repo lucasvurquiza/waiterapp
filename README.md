@@ -1,4 +1,4 @@
-# Pokedex :wine_glass:
+# WAITERAPP :wine_glass:
 
 ## Projeto criado com Node.JS, React.JS, React-Native
 

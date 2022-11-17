@@ -23,3 +23,9 @@
 ### Execute em um terminal o comando:
 
 #### `yarn dev`
+
+## Tutorial de Execução do Mobile
+
+### Execute em um terminal o comando:
+
+#### `yarn start`

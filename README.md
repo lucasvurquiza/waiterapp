@@ -72,6 +72,6 @@
 
 
 
-#### Tela Confirmação de Pedid - App
+#### Tela Confirmação de Pedido - App
 
 <img src="/products-images/order-confirmed.png"/>

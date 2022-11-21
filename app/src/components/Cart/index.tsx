@@ -17,7 +17,8 @@ import {
   QuantityContainer,
   ProductDetails,
   Summary,
-  TotalContainer
+  TotalContainer,
+  Input
 } from './styles';
 
 interface CartProps {
@@ -31,6 +32,7 @@ interface CartProps {
 export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTable }: CartProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [note, setNote] = useState('');
 
   const total = cartItems.reduce((acc, cartItem) => {
     return acc + cartItem.quantity * cartItem.product.price;
@@ -43,7 +45,8 @@ export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTa
       products: cartItems.map((cartItem) => ({
         product: cartItem.product._id,
         quantity: cartItem.quantity
-      }))
+      })),
+      note
     };
     await api.post('/orders', payload);
     setIsLoading(false);
@@ -51,6 +54,7 @@ export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTa
   }
 
   function handleOk() {
+    setNote('');
     onConfirmOrder();
     setIsModalVisible(false);
   }
@@ -63,7 +67,7 @@ export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTa
           data={cartItems}
           keyExtractor={cartItem => cartItem.product._id}
           showsVerticalScrollIndicator={false}
-          style={{ marginBottom: 20, maxHeight: 150 }}
+          style={{ marginBottom: 20, maxHeight: 135 }}
           renderItem={({ item: cartItem }) => (
             <Item>
               <ProductContainer>
@@ -96,6 +100,11 @@ export function Cart({ cartItems, onAdd, onDecrement, onConfirmOrder, selectedTa
           )}
         />
       )}
+      <Input
+        placeholder='Observações'
+        placeholderTextColor='#666'
+        keyboardType='default'
+        onChangeText={setNote} />
       <Summary>
         <TotalContainer>
           {cartItems.length > 0 ? (

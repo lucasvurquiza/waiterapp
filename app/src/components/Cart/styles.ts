@@ -39,3 +39,11 @@ export const TotalContainer = styled.View`
   margin-right: 38px;
   flex: 1;
 `;
+
+export const Input = styled.TextInput`
+  background: #ffffff;
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  border-radius: 8px;
+  padding: 6px;
+  margin-bottom: 24px;
+`;

@@ -98,6 +98,25 @@ export const OrderDetails = styled.div`
     }
   }
 
+  .notes {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+
+    > strong {
+      font-weight: 500;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    > span {
+      font-size: 12px;
+      color: #666;
+      margin-left: 12px;
+      margin-top: 8px;
+    }
+  }
+
   .total {
     display: flex;
     align-items: center;

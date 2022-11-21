@@ -14,6 +14,9 @@ export const Order = model('Order', new Schema({
     type: Date,
     default: Date.now
   },
+  note: {
+    type: String
+  },
   products: {
     type: [{
       product: {

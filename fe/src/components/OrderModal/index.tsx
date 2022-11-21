@@ -88,6 +88,11 @@ export function OrderModal({
             ))}
           </div>
 
+          <div className="notes">
+            <strong>Observações</strong>
+            <span>{order.note ? order.note : 'Nenhuma'}</span>
+          </div>
+
           <div className="total">
             <span>Total</span>
             <strong>{formatCurrency(total)}</strong>

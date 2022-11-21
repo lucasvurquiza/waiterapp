@@ -30,6 +30,8 @@
 
 #### `yarn start`
 
+
+
 ### Print's da Aplicação - WEB
 
 #### Tela Principal - WEB

@@ -29,3 +29,47 @@
 ### Execute em um terminal o comando:
 
 #### `yarn start`
+
+### Print's da Aplicação - WEB
+
+#### Tela Principal - WEB
+
+<img src="/products-images/home-fe.png"/>
+
+
+
+#### Tela Detalhes do Pedido - WEB
+
+<img src="/products-images/order-details-fe.png"/>
+
+
+
+### Print's da Aplicação - App
+
+#### Tela Principal - App
+
+<img src="/products-images/home-app.png"/>
+
+
+
+#### Tela Detalhes do Produto - App
+
+<img src="/products-images/product-details-app.png"/>
+
+
+
+#### Modal Número da Mesa - App
+
+<img src="/products-images/table-number.png"/>
+
+
+
+#### Tela Carrinho de Compras - App
+
+<img src="/products-images/table-cart.png"/>
+
+
+
+#### Tela Confirmação de Pedid - App
+
+<img src="/products-images/order-confirmed.png"/>
